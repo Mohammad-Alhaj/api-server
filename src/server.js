@@ -13,7 +13,9 @@ app.get("/",(req,res)=>{
 });
 
 
-
+// app.get ("/test",(req,res)=>{
+// res.sed('hello every one how are you ')
+// })
 
 
 

@@ -1,5 +1,10 @@
 # api-server
 
+## UML 
+
+---
+[UML](./asset/class04.png)
+
 table name to be the same word that you want for example if its singular and you want it to stay as it is there is a property called `freezeTableName:true`   its by default false you need to set it true
 
 ```
@@ -67,6 +72,26 @@ async function updateFood(req, res) {
     res.status(404).send("can't find the user or id please enter correct id !")
  }
 }
+```
+
+
+### *experments* 
+
+we can name any things neted fo sequelize and DataType like seq and data 
+and I should change it` (seq.define &&  type: data.STERING )`
+```
+const Person  = (sequelize, DataType)=>
+sequelize.define('user',{
+
+    name:{
+        type: DataType.STRING,
+        allowNull: false,
+        },
+      
+})
+
+module.exports = Person;
+
 ```
 ### URL
 
